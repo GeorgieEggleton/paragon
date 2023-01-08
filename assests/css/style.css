@@ -92,7 +92,11 @@ li a {
     color: #fff;
     font-size: small;
     text-transform: none;
-    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: justify;
+    line-height: 20px;
     letter-spacing: normal;
 }
 
@@ -109,8 +113,9 @@ li a {
 .crew-section{
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 5px;
-    margin: 50px 200px 20px 200px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 50px 200px 0 200px;
     /*background: red;*/
     padding: 5px;
    
@@ -123,22 +128,38 @@ li a {
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    padding-top: 20px; 
 }
 
 .crew-section > div {
     background: #fff;
-    
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .crew-photo {
     height: 200px;
     width: 200px;
     border-radius: 50%;  
+    margin-left:25%;
+    margin-top: 10px;
 }
 
 .crew-section > div > p {
     margin: 10px 30px 10px 30px;
     text-align: justify;
+}
+.crew-section > div > h3 {
+    margin: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+.crew-photo:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+
+}
+
+footer {
+    height: 200px;
+    background: #003145;
 }
