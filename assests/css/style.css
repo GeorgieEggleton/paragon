@@ -256,8 +256,6 @@ table > th, td {
    display: grid;
    grid-template-columns: auto auto auto auto;
    column-gap: 10px;
-   
-    background-color: red;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -267,17 +265,12 @@ table > th, td {
 }
 
 .boat-photos-container > div > img {
-    /*display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    height: 250px;
-    column-gap: 3px;*/
     width: 100%;
-    
     align-items:center;
     vertical-align: middle;
-    
     overflow: hidden;
     padding:2px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 
