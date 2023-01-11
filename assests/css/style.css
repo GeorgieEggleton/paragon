@@ -250,23 +250,21 @@ table > th, td {
     letter-spacing: normal;
 }
 
-
 .boat-photos-container{
-    
    display: grid;
-   grid-template-columns: auto auto auto auto;
+   grid-template-columns: 23% 23% 23% 23%;
+   align-items: center;
    column-gap: 10px;
     margin-bottom: 20px;
     width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.boat-photos-container > div {
-    block-size: inherit;
-}
 
 .boat-photos-container > div > img {
     width: 100%;
-    align-items:center;
+    align-items: center;
     vertical-align: middle;
     overflow: hidden;
     padding:2px;
