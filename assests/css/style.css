@@ -241,6 +241,53 @@ li a:hover {
     letter-spacing: normal;
 }
 
+
+/*Hero Image - Thank You*/
+
+#thanks-hero-image-container{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#thanks-hero-image {
+    width: 100%;
+    height: 100%;
+    background: url(../images/thank-you-hero.JPG) no-repeat center bottom;
+    background-size:cover;
+}
+
+#thanks-hero-text-box{
+    font-size: 130%;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;/* Not working*/
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    width: 500px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(0, 49, 69, 0.7);
+    top: 100px;
+    right: 150px;
+    position: absolute;
+}
+
+#thanks-hero-text{
+    color: #fff;
+    font-size: medium;
+    text-transform: none;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+
+
 /*Opening text for each page*/
 
 .opening-paragraph {
@@ -496,3 +543,12 @@ input:checked + label + .content {
 .send-button:hover{
     background: rgba(0, 49, 69, 0.7);
 }
+
+
+#404-container{
+    width: 60%;
+    border:#003145 solid 1 px
+}
+
+
+#404-container >
