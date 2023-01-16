@@ -24,8 +24,9 @@ body {
     max-height: 100%; 
 }
 
-
 /*Navigation Menu*/
+
+
 
 nav {
     display:flex;
@@ -58,6 +59,67 @@ li a:hover {
     color: #003145; 
 }
 
+
+
+
+
+
+
+
+
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: green;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media(max-width: 900px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: violet;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Hero Image - Home*/
 .hero-image-container{
     width: 100%;
@@ -73,7 +135,7 @@ li a:hover {
     background-size: contain;
 }
 
-.hero-text-box{
+.hero-text-box-left{
     font-size: 130%;
     font-family: Raleway, sans-serif;
     font-weight: 400;
@@ -87,6 +149,23 @@ li a:hover {
     background-color: rgba(0, 49, 69, 0.7);
     top: 100px;
     left: 150px;
+    position: absolute;
+}
+
+.hero-text-box-right{
+    font-size: 130%;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    width: 500px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(0, 49, 69, 0.7);
+    top: 100px;
+    right: 150px;
     position: absolute;
 }
 
@@ -149,6 +228,11 @@ li a:hover {
 
 
 /*Crew Profiles*/
+#crew-section-whole{
+    background: rgba(0, 49, 69, 0.6);
+    padding-bottom: 40px;
+}
+
 .crew-section{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -158,10 +242,6 @@ li a:hover {
     padding: 5px;
 }
 
-#crew-section-whole{
-    background: rgba(0, 49, 69, 0.6);
-    padding-bottom: 40px;
-}
 
 #crew-title {
     text-align: center;
@@ -384,6 +464,7 @@ input:checked + label + .content {
 
 .send-button:hover{
     background: rgba(0, 49, 69, 0.7);
+    cursor: pointer;
 }
 
 
@@ -392,6 +473,34 @@ input:checked + label + .content {
 @media screen and (max-width: 1200px) {
     .image-grid {
         --num-cols: 2;
-        --row-height: 200px;
 }
+.crew-section{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    padding: 5px;
+}
+
+
+/*Screens smaller than 950px*/
+@media screen and (max-width:950px){
+    .image-grid {
+        --num-cols: 1;
+    }
+
+    .opening-paragraph {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .opening-paragraph p {
+        margin: 10px;
+        text-align: justify;
+        font-weight: 100;
+    }
+
+    .crew-section{
+        width: 90%;
+        margin: 10px;
+    }
 
