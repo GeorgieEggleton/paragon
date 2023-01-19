@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
 * {
     margin: 0;
@@ -25,8 +25,6 @@ body {
 }
 
 /*Navigation Menu*/
-
-
 
 nav {
     display:flex;
@@ -59,67 +57,6 @@ li a:hover {
     color: #003145; 
 }
 
-
-
-
-
-
-
-
-
-
-.open-menu , .close-menu {
-    position: absolute;
-    color: green;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-}
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-#check {display: none;}
-@media(max-width: 900px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: violet;
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Hero Image - Home*/
 .hero-image-container{
     width: 100%;
@@ -132,7 +69,7 @@ li a:hover {
     width: 100%;
     height: 100%;
     background: url(../images/hero-image.jpg) no-repeat center center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .hero-text-box-left{
@@ -144,8 +81,7 @@ li a:hover {
     color: #fff;
     width: 500px;
     height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+    padding: 20px;
     background-color: rgba(0, 49, 69, 0.7);
     top: 100px;
     left: 150px;
@@ -161,8 +97,7 @@ li a:hover {
     color: #fff;
     width: 500px;
     height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+    padding: 20px;
     background-color: rgba(0, 49, 69, 0.7);
     top: 100px;
     right: 150px;
@@ -314,10 +249,14 @@ footer {
 
 /*The Boat Page*/
 #lines-drawings {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+
 }
+
+
+
 
 #specs {
   display: flex;
@@ -342,10 +281,9 @@ table > th, td {
    grid-template-columns: 23% 23% 23% 23%;
    align-items: center;
    column-gap: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+   margin-bottom: 20px;
+   width: 100%;
+   justify-content: center;
 }
 
 .boat-photos-container > div > img {
@@ -395,19 +333,12 @@ input:checked + label + .content {
 }
 
 /*Gallery pages*/
+
 .image-grid {
-    
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-
-    box-sizing: border-box;
-    padding: var(--gap);
-
     display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
+    grid-template-columns: 4;
+    grid-auto-rows: auto;
+    gap: 16px;
 }
 
 .image-grid > img {
@@ -468,26 +399,89 @@ input:checked + label + .content {
 }
 
 
+/*404 Page*/
+
+#e404-container {
+    border: #003145 solid 1px;
+    clear: both;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#e404-container > h1 {
+        color: #003145;
+        text-align: center;
+        margin: 50px;
+        text-decoration: underline;
+}
+
+#e404-container > h3 {
+    color: #003145;
+        text-align: center;
+}
+
+#e404-container > p {
+    color: #003145;
+        text-align: center;
+        margin-bottom: 50px;
+}
+
+
+
+
 /*MEDIA QUIRIES*/
-/*Screens smaller than 1200px*/
-@media screen and (max-width: 1200px) {
+/*Screens smaller than 1100px*/
+@media screen and (max-width: 1100px) {
     .image-grid {
         --num-cols: 2;
 }
-.crew-section{
+    .crew-section{
     display: grid;
     grid-template-columns: 100%;
     grid-row-gap: 5px;
     padding: 5px;
 }
+}
 
+/*Screens smaller than 700px*/
+@media only screen and (max-width: 700px) {
 
-/*Screens smaller than 950px*/
-@media screen and (max-width:950px){
-    .image-grid {
-        --num-cols: 1;
+    .crew-section{
+        width: 90%;
+        margin: 10px;
     }
 
+    nav { 
+        height: 150px;
+        padding-top: 10px;
+        margin: 0;
+    }
+          
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero-text-box-left{
+        width: 60%;
+        height: auto;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .hero-text-box-right{
+        width: 60%;
+        height: auto;
+        top: 40px;
+        right: 40px;
+    }
+
+    #hero-image {
+        background: url(../images/hero-image-mobile.jpg) no-repeat center center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
     .opening-paragraph {
         width: 90%;
         margin: auto;
@@ -499,8 +493,14 @@ input:checked + label + .content {
         font-weight: 100;
     }
 
-    .crew-section{
-        width: 90%;
-        margin: 10px;
-    }
+    .boat-photos-container{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        align-items: center;
+        column-gap: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+     }
 
+}
