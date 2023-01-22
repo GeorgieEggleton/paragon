@@ -68,7 +68,7 @@ li a:hover {
 #hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/hero-image.jpg) no-repeat center center;
+    background: url(../images/hero-image.webp) no-repeat center center;
     background-size: cover;
 }
 
@@ -405,7 +405,7 @@ input:checked + label + .content {
     border: #003145 solid 1px;
     clear: both;
     width: 75%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 #e404-container > h1 {
@@ -418,11 +418,18 @@ input:checked + label + .content {
 #e404-container > h3 {
     color: #003145;
         text-align: center;
+        padding-bottom: 10px;
 }
 
 #e404-container > p {
-    color: #003145;
+        color: #003145;
         text-align: center;
+        margin-bottom: 50px;
+}
+
+#e404-container > div {
+        text-align: center;
+        height: 75px;
         margin-bottom: 50px;
 }
 
