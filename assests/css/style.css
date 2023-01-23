@@ -489,7 +489,7 @@ input:checked + label + .content {
     }
 
     #hero-image {
-        background: url(../images/hero-image-mobile.jpg) no-repeat center center;
+        background: url(../images/hero-image-mobile.webp) no-repeat center center;
         width: 100%;
         height: 100%;
         background-size: cover;
