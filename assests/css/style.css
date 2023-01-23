@@ -157,6 +157,7 @@ li a:hover {
 
 .opening-paragraph p {
     margin: 30px 40px 20px 40px;
+    color: #003145;
     text-align: justify;
     font-weight: 100;
 }
@@ -375,6 +376,11 @@ input:checked + label + .content {
 
 .form-input{
     border: #003145 solid 1px;
+    padding: 5px;
+}
+
+.form-input:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 #contact-field{
