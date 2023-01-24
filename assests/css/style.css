@@ -339,6 +339,8 @@ input:checked + label + .content {
     display: grid;
     grid-auto-rows: auto;
     gap: 16px;
+    max-width: 65%;
+    align-items: center;
 }
 
 .image-grid > img {

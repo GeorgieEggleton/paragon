@@ -12,6 +12,9 @@ S/Y Paragon website is intended to show people what life on board a sailing yach
 #### Logo 
 The Paragon Diamond logo is the boats logo and used around the boat and on ships papers, so it is also used on the website and features on every page as a link back to the home page. 
 
+### Favicon
+The yachts diamond logo also features as the favicon to help users identify the website when they have multiple tabs open. 
+
 #### Navigation Menu 
 This features at the top of all pages (except the 404 page) and has links to each page, home, boat, adventures, & contact. It also loads on the “thank you” page after the contact form has been filled in to allow users to carry on navigation the site. On a desktop it is displayed horizontally along the top and as the screen size becomes smaller the items will stack vertically. 
 
@@ -20,8 +23,6 @@ Each page features a hero image featuring the boat or scenic locations to give a
 
 #### Hero Image Text 
 There is a text box over the hero image on each page that introduces the user to page and gives a short overview of what that page is about. On a desktop this can will display offset to the left or right depending on the image behind and what works best with that image. On a smaller screen such as a mobile the text box will be more centered to allow for the text to be easily readable. 
-
-SCREEN SHOT OF HERO IMAGE ON DESKTOP AND MOBILE
 
 #### Opening Paragraphs 
 The opening paragraphs on the home page and adventures page give a slightly longer explanation of the intentions of the page.  
@@ -41,6 +42,8 @@ The contact page features a form for the user to complete if they would like to 
 #### Footer
 The footer features on each page and has links to the yachts social media accounts (not yet created so currently links to SM home pages). These links open in a new tab to ensure the user doesn’t lose the original site. 
 
+### 404 Page 
+A 404 page is included and will display if a user navigates to a broken link. The 404 page has a linkto allow the user to easily navigate back to the main website without the need of the browsers back button.
 
 ## New Features to come
 
@@ -59,7 +62,33 @@ Following the technically specification of the yacht I would like to imbed a ser
 
 
 
-TESTING 
+
+
+## TESTING 
+
+All HTML and CSS have been run throught the W3C validators with no errors found. 
+
+![cssvalidator](/assests/images-readme/css-validator-image.png)
+
+![htmlvalidator](/assests/images-readme/index-check.png)
+![htmlvalidator](/assests/images-readme/boat-check.png)
+![htmlvalidator](/assests/images-readme/contact-check.png)
+![htmlvalidator](/assests/images-readme/thankyou-check.png)
+![htmlvalidator](/assests/images-readme/404-check.png)
+
+The site was also run through LightHouse on Google, initally there was a lower than expected performance score due to the large hero images on each page and the crew photos on the home page. This was fixed by converting the images to .webp files and then compressing them. using https://tinypng.com/ which resolved the issue. 
+
+![lighthousescore](/assests/images-readme/lighthouse-scores.png)
+
 Form validates input 
 
+## Accessibility
 
+![lighthousescore](/assests/images-readme/accessability-score.png)
+
+The site socre well on the LightHouse accessibily score. 
+
+- All images have alt text
+- All icon have aria labels for screen readers 
+- All text is large and in contrasting colours
+- All form fields have labels for screen readers 
