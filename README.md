@@ -34,7 +34,7 @@ The crew section gives a brief overview of each of the crew on board, including 
 On the boat page are the technically drawing of the yacht and a layout plan to show the user in more details the design of the yacht. Below is a table with the basic specifications of the yacht followed by a selection of photos showing what life is like on board the boat.
 
 #### Our adventures  
-This page is designed to give the user the change to see what some of the specific location visited are like. This page is designed using accordions to compress the sections to start with making it easier for the user to navigate to the relevant section. This will become more important as more locations are added and the list becomes longer. 
+This page is designed to give the user the change to see what some of the specific location visited are like. This page is designed using accordions to compress the sections to start with making it easier for the user to navigate to the relevant section. This will become more important as more locations are added and the list becomes longer. Originally on the wireframes these were planned as a scrolling carosel of photos but this proved very difficlut to do using only html & css and having an open gallery for each made the page too long and busy so the accordians provided a good solution. 
 
 #### Contact Us  
 The contact page features a form for the user to complete if they would like to get in contact. On completion & submission this will re-direct to a “thank-you” page to ensure the user knows that the form has been successfully submitted. All fields are mandatory fields to make sure the user has given enough information to allow a response. 
@@ -60,10 +60,6 @@ More locations and larger galleries including videos split into sections – lik
 Following the technically specification of the yacht I would like to imbed a series of videos which follow the upgrates currently been made to the boat to allow off-grid living in remote locations. Users would be able to use these videos to help with their own conversion works. 
 
 
-
-
-
-
 ## TESTING 
 
 All HTML and CSS have been run throught the W3C validators with no errors found. 
@@ -72,6 +68,7 @@ All HTML and CSS have been run throught the W3C validators with no errors found.
 
 ![htmlvalidator](/assests/images-readme/index-check.png)
 ![htmlvalidator](/assests/images-readme/boat-check.png)
+![htmlvalidator](/assests/images-readme/adventure-check.png)
 ![htmlvalidator](/assests/images-readme/contact-check.png)
 ![htmlvalidator](/assests/images-readme/thankyou-check.png)
 ![htmlvalidator](/assests/images-readme/404-check.png)
@@ -80,15 +77,43 @@ The site was also run through LightHouse on Google, initally there was a lower t
 
 ![lighthousescore](/assests/images-readme/lighthouse-scores.png)
 
-Form validates input 
+
+### Link Testing 
+
+- The form was tested and would not submit without the required inputs as expected. On correct completion of the form the page re-directs to the Thank You page as expected. 
+
+- All links in the navigation bar were tested on both desktop and mobile devices and work correctly. 
+
+- The links to social media were tested on on both desktop and mobile devices and work correctly. 
 
 ## Accessibility
 
 ![lighthousescore](/assests/images-readme/accessability-score.png)
 
-The site socre well on the LightHouse accessibily score. 
+The site socred well on the LightHouse accessibily score. 
 
 - All images have alt text
 - All icon have aria labels for screen readers 
 - All text is large and in contrasting colours
 - All form fields have labels for screen readers 
+
+## Responsiveness
+
+Media quiries were used to allow the site to be responsive to use on desktop and mobile devices. During development this was tested using Google's dev tools. After deployment this was tested on the following devices:
+- MacBook Air
+- iPhone 13 Pro Max
+- iphone X
+- Armor 11T
+- 2560 x 1080 resolution curved wide screen
+
+All worked as expected except for the bug found on the super wide screen, now ressolved. 
+
+## Bugs & Fixes
+
+On the 2560 x 1080 wide cured screen the hero image on the home page was found to crop too much to generate the needed width. This was fixed by adding a maximum width as it was decided it would be unusual for a user to use a wide screen like this for one website at a time. 
+
+The lines drawing was found to overlap the edge of the screen on small mobile devices. 
+
+
+
+

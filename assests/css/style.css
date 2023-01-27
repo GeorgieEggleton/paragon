@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: none;
+    max-width: 1800px;
 }
 
 body {
@@ -14,14 +15,23 @@ body {
 #header-logo-container {
     height: 75px;
     width: 75px;
-    margin-left: 40px;
-    float: left;
+    margin-left: 20px;
 }
 
 #logo {
    padding-top: 10px;
     max-width: 100%;
     max-height: 100%; 
+    margin: 0;
+}
+
+header{
+    display: flex;
+    margin: 0 auto;
+}
+
+header a{
+    margin: 0;
 }
 
 /*Navigation Menu*/
@@ -68,7 +78,7 @@ li a:hover {
 #hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center;
+    background: url(../images/hero-image.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -120,7 +130,7 @@ li a:hover {
 #boat-hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/boat-hero.webp) no-repeat center bottom;
+    background: url(../images/boat-hero.jpg) no-repeat center bottom;
     background-size:cover;
 }
 
@@ -128,7 +138,7 @@ li a:hover {
 #adventure-hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/adventure-hero.webp) no-repeat center bottom;
+    background: url(../images/adventure-hero.jpg) no-repeat center bottom;
     background-size:cover;
 }
 
@@ -136,7 +146,7 @@ li a:hover {
 #contact-hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/contact-hero.webp) no-repeat center bottom;
+    background: url(../images/contact-hero.jpg) no-repeat center bottom;
     background-size:cover;
 }
 
@@ -144,7 +154,7 @@ li a:hover {
 #thanks-hero-image {
     width: 100%;
     height: 100%;
-    background: url(../images/thank-you-hero.webp) no-repeat center bottom;
+    background: url(../images/thank-you-hero.jpg) no-repeat center bottom;
     background-size:cover;
 }
 
@@ -252,12 +262,13 @@ footer {
 #lines-drawings {
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: center; 
+  width: 55%;
 }
 
-
-
+#lines-drawings > img {
+    width: 100%;
+}
 
 #specs {
   display: flex;
@@ -367,6 +378,7 @@ input:checked + label + .content {
 
 .contact-form{
         display: flex;
+        justify-content: flex-end;
         flex-direction: column;
         width: 60%;
         margin: 0 auto;
@@ -378,6 +390,7 @@ input:checked + label + .content {
 .form-input{
     border: #003145 solid 1px;
     padding: 5px;
+    width: 75%
 }
 
 .form-input:hover{
@@ -389,6 +402,8 @@ input:checked + label + .content {
 }
 
 .form{
+    text-align: left;
+    width: 75%;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -398,6 +413,7 @@ input:checked + label + .content {
     margin-top: 20px;
     color: #fff;
     padding:5px;
+    width: 75%
 }
 
 .send-button:hover{
@@ -460,6 +476,9 @@ input:checked + label + .content {
 /*Screens smaller than 700px*/
 @media only screen and (max-width: 700px) {
 
+    h4{
+        font-size: 16px;
+    }
     .crew-section{
         width: 90%;
         margin: 10px;
@@ -506,6 +525,11 @@ input:checked + label + .content {
         text-align: justify;
         font-weight: 100;
     }
+
+    #lines-drawings {
+        width: 75%
+    }
+
 
     .boat-photos-container{
         display: grid;
