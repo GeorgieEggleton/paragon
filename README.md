@@ -2,6 +2,10 @@
 
 S/Y Paragon website is intended to show people what life on board a sailing yacht is like. The site is aimed at people who are interested in following life at sea and seeing the progress of the boat while travelling around world. It should also give an insite into the type of vessel Paragon is and who the crew are. 
 
+A link to the live site can be found here - https://georgieeggleton.github.io/paragon/
+
+
+
 ![responsivenessmockup](/assests/images-readme/responsivness-mockup.png)
 
 ## Features
@@ -190,6 +194,20 @@ The site should use images that show some of the unique locations the boat has b
 ![boat page design](/assests/images-readme/boatpagedesign.png)
 ![adventure page design](/assests/images-readme/adventurepagedesign.png)
 ![contact page design](/assests/images-readme/contactpagedesign.png)
+
+## Technologies
+
+
+- HTML - The main structure of the website uses HTML.
+- CSS The website was styled using custom CSS linked to an external file.
+- Gitpod - The website was developed using Gitpod.
+- GitHub - The site is hosted on GitHub. 
+- Font Awesome - Icons for the social media links and the chevrons on the drop down accordions are from [Font Awesome](https://fontawesome.com/) 
+- Tinyjpg - [Tiny PNG](https://tinyjpg.com/) was used to compress the size of the hero images
+- Favicon.io - A favicon was created of the boats logo using [favicon.io](https://favicon.io/favicon-converter/)
+- Balsamiq - wireframes were created using [Balsamiq](https://balsamiq.com/wireframes/desktop/)
+- GitHub Pages - The site is deployed using [GitHub Pages](https://github.com/GeorgieEggleton/paragon)
+
 
 ## Credits
 
