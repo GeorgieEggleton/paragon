@@ -368,6 +368,13 @@ input:checked + label + .content {
     grid-row: span 2;
 }
 
+.movie-grid{
+    display: grid;
+    gap: 16px;
+    max-width: 65%;
+    grid-template-columns: auto auto auto;
+}
+
 /*Contact Form*/
 #contact-section {
     width: 100%;
@@ -456,9 +463,6 @@ input:checked + label + .content {
         margin-bottom: 50px;
 }
 
-
-
-
 /*MEDIA QUIRIES*/
 /*Screens smaller than 1100px*/
 @media screen and (max-width: 1100px) {
@@ -540,5 +544,12 @@ input:checked + label + .content {
         width: 100%;
         justify-content: center;
      }
+
+     .movie-grid{
+        display: grid;
+        gap: 16px;
+        max-width: 65%;
+        grid-template-columns: auto;
+    }
 
 }
